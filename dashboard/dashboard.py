@@ -9,7 +9,7 @@ st.title("📊 Dashboard Kualitas Udara")
 st.write("Ini adalah dashboard sederhana untuk melihat kualitas udara dari berbagai lokasi.")
 
 # Cari file CSV di dalam folder data
-files = glob.glob("../data/*.csv") 
+files = glob.glob("merged_air_quality.csv") 
 pollutants = ["PM2.5", "PM10", "NO2", "SO2"]
 data_stations = {} 
 
