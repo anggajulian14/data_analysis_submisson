@@ -7,8 +7,8 @@ import os
 st.title("📊 Dashboard Kualitas Udara")
 st.write("Ini adalah dashboard sederhana untuk melihat kualitas udara dari berbagai lokasi.")
 
-# Cek apakah file merged tersedia
-file_path = "merged_air_quality.csv"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+file_path = os.path.join(BASE_DIR, "merged_air_quality.csv")
 pollutants = ["PM2.5", "PM10", "NO2", "SO2"]
 
 if not os.path.exists(file_path):
